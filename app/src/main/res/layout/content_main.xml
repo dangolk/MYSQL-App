@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/myInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Input Text"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/addButton"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="42dp"
+        android:onClick="addButtonClick"
+        android:text="add"
+        />
+
+    <Button
+        android:id="@+id/deleleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/myInput"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="35dp"
+        android:onClick="deleteButtonClick"
+        android:text="delete"
+        />
+
+    <EditText
+        android:id="@+id/myText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Output Text"
+        android:layout_below="@+id/addButton"
+        android:layout_alignEnd="@+id/deleleButton"
+        />
+</RelativeLayout>
